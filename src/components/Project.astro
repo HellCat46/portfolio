@@ -11,15 +11,15 @@ interface Props {
 const { name, repolink, tags, status, description } = Astro.props;
 ---
 
-<a href={repolink}>
 <div class="card mx-5 my-2 bg-base-300">
-  <div class="card-body">
-    <h2 class="card-title">
-      {name} 
-      {tags.map( tag => (<div class="badge badge-info " style=`background-color : ${tag.color}` > {tag.name} </div> ))}      
-    </h2>
-    <div class="badge badge-info" style=`background-color: ${status.color};` > {status.name} </div>
-    <p>{description}</p>
-  </div>
+  <a href={repolink}>
+    <div class="card-body">
+      <h2 class="card-title">
+        {name} 
+        {tags.map( tag => (<div class="badge badge-info " style=`background-color : ${tag.color}` > {tag.name} </div> ))}      
+      </h2>
+      <div class="badge badge-info" style=`background-color: ${status.color};` > {status.name} </div>
+      <p>{description}</p>
+    </div>
+  <a href={repolink}>
 </div>
-</a>
