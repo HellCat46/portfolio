@@ -1,0 +1,22 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Project from "../components/Project.astro";
+import { TAGS, STATUS, type Status, type Tags } from "../shared.types";
+---
+
+<Layout title="Layout">
+  <Project
+    name="Frieren"
+    repolink="https://github.com/HellCat46/Frieren"
+    description="Frieren is a Discord Bot to manage study notes with some extra features."
+    status={STATUS.Complete}
+    tags={[TAGS.Typescript, TAGS.Nodejs]}
+  />
+  <Project
+    name="Portfolio"
+    repolink="https://github.com/HellCat46/portfolio"
+    description="The Website you are looking at right now."
+    status={STATUS.Working}
+    tags={[TAGS.Typescript, TAGS.Nodejs]}
+  />
+</Layout>
