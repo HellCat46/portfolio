@@ -3,16 +3,15 @@ import type { Tags, Status } from '../shared.types';
 
 interface Props {
   name: string;
-  repolink : string
   tags: Tags[];
   description: string;
   started_at : string;
   completed_at ?: string;
-  collaborators ?: {name : string, gitlink : string}[]
+  repolink ?: string
   status: Status;
   livelink ?: string;
 }
-const { name, repolink, tags, description, started_at , completed_at, collaborators, status, livelink} = Astro.props;
+const { name, repolink, tags, description, started_at , completed_at, status, livelink} = Astro.props;
 ---
 
 <div class="collapse w-auto bg-base-200 mx-5 my-2" >
@@ -20,7 +19,7 @@ const { name, repolink, tags, description, started_at , completed_at, collaborat
   <div class="collapse-title card bg-base-300">
       <div class="card-body">
         <h2 class="card-title">
-          <a href={repolink} target="_blank">{name}</a> 
+          {name}
           {tags.map( tag => (<div class="badge badge-info " style=`background-color : ${tag.color}` > {tag.name} </div> ))}      
         </h2>
         <p>{description}</p>
@@ -30,7 +29,7 @@ const { name, repolink, tags, description, started_at , completed_at, collaborat
         <div class="grid grid-cols-1 text-lg mt-2 lg:grid-cols-2">
           <div class="text-center">Started At : {started_at} </div>
           <div class="text-center">Completed At : {completed_at ? completed_at : "Not Yet Completed"} </div>
-          <div class="text-center">Collaborators : {collaborators? "": "No one"} </div>
+          <div class="text-center">Git Repository : {repolink ? <a class="link link-info" href={repolink} target="_blank">link</a> : "Not Available"}</div>
           <div class="text-center">Status : {<div class="badge badge-primary" style=`background-color: ${status.color};` >{status.name}</div>}</div>
           {livelink && <div class="text-center text-2xl col-span-1 lg:col-span-2">See the project in Action <a class="link link-success" href={livelink}>here</a>.</div>}
         </div>
