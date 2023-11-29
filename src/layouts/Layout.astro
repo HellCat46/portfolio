@@ -29,6 +29,6 @@ const { title } = Astro.props;
   <body class="bg-base-100">
     <Header />
     <slot />
-    <Footer />
+    <Footer title={title}/>
   </body>
 </html>
