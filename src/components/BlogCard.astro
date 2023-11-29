@@ -1,0 +1,16 @@
+---
+interface Props {
+    name : string,
+    description : string,
+    posted_at : string;
+}
+const { name, description,posted_at} = Astro.props;
+---
+
+<div class="card card-side mx-5 my-2 bg-base-300">
+    <div class="card-body">
+      <h2 class="card-title"><div>{name}</div><div class="grow"></div><div class="text-xs font-normal">Posted At : {posted_at}</div></h2>
+      <p>{description}</p>
+    </div>
+  </a>
+</div> 
