@@ -1,4 +1,7 @@
 ---
+interface Props {
+  title : string
+}
 const {title} = Astro.props;
 ---
 <footer class="footer footer-center mb-16 p-10 bg-base-200 text-base-content rounded">
@@ -124,7 +127,7 @@ const {title} = Astro.props;
     >
     <span class="btm-nav-label">Home</span>
   </a>
-  <a href="/projects" class={ title == "Projects" ? "active" : ""}>
+  <a href="/projects" class={ title.includes("Projects") ? "active" : ""}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-5 w-5"
@@ -144,7 +147,7 @@ const {title} = Astro.props;
     >
     <span class="btm-nav-label">Projects</span>
     </a>
-  <a href="/blog" class={ title == "Blog" ? "active" : ""}>
+  <a href="/blog" class={ title.includes("Blog") ? "active" : ""}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-5 w-5"
@@ -164,7 +167,7 @@ const {title} = Astro.props;
     >
     <span class="btm-nav-label">Blog</span>
     </a>
-  <a href="/uses" class={ title == "Uses" ? "active" : ""}>
+  <a href="/uses" class={ title.includes("Uses") ? "active" : ""}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-5 w-5"
