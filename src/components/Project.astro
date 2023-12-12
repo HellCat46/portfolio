@@ -20,7 +20,10 @@ const { name, repolink, tags, description, started_at , completed_at, status, li
       <div class="card-body">
         <h2 class="card-title">
           {name}
-          {tags.map( tag => (<div class="badge badge-info " style=`background-color : ${tag.color}` > {tag.name} </div> ))}      
+          <div class="grow">
+          {tags.map( tag => (<div class="badge badge-info m-1" style=`background-color : ${tag.color}` > {tag.name} </div> ))}      
+          </div>
+          <div class="badge badge-primary" style=`background-color: ${status.color};` >{status.name}</div>
         </h2>
         <p>{description}</p>
       </div>
@@ -30,8 +33,7 @@ const { name, repolink, tags, description, started_at , completed_at, status, li
           <div class="text-center">Started At : {started_at} </div>
           <div class="text-center">Completed At : {completed_at ? completed_at : "Not Yet Completed"} </div>
           <div class="text-center">Git Repository : {repolink ? <a class="link link-info" href={repolink} target="_blank">link</a> : "Not Available"}</div>
-          <div class="text-center">Status : {<div class="badge badge-primary" style=`background-color: ${status.color};` >{status.name}</div>}</div>
-          {livelink && <div class="text-center text-2xl col-span-1 lg:col-span-2">See the project in Action <a class="link link-success" href={livelink}>here</a>.</div>}
+          {livelink && <div class="text-center">Project in Action: <a class="link link-info" href={livelink}>link</a></div>}
         </div>
   </div>
 </div>
