@@ -3,8 +3,9 @@ export const TAGS = {
   Typescript: { name: "TS/JS", color: "#007acc" },
   Nodejs: { name: "Node", color: "#3c873a" },
   Rust: { name: "Rust", color: "#e43716" },
-  C: { name: "C/C++", color: "#03589b" },
+  C: { name: "C", color: "#03589b" },
   CSharp: { name: "C#", color: "#9d72d9" },
+  Java: { name: "Java", color: "#f8981d" },
   // Databases
   MySQL: { name: "MySQL", color: "#e48e00" },
   MsSQL: { name: "MsSQL", color: "#df2f29" },
