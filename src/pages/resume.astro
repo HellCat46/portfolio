@@ -1,0 +1,107 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/ResumeCard.astro";
+---
+
+<Layout title="Resume | Harshit">
+  <div
+    class="flex flex-col p-5 m-5 lg:m-10 gap-10 border-2 border-error shadow-lg rounded-lg"
+  >
+    <div class="flex lg:flex-row m-5">
+      <div class="flex flex-col">
+        <div class="text-4xl font-bold">Harshit</div>
+        <div class="text-4xl font-bold">Mittal</div>
+        <div>Rajasthan, India</div>
+      </div>
+      <div class="grow"></div>
+      <div class="flex flex-col justify-end items-center">
+        <a
+          class="text-2xl link link-accent"
+          href="mailto:mittalharshit094@gmail.com">Mail</a
+        >
+        <div class="grow"></div>
+        <a class="text-2xl link link-info" href="mailto:">Github</a>
+      </div>
+    </div>
+    <div class="flex flex-col bg-base-200 rounded-lg p-5">
+      <span class="text-3xl font-bold text-center">Skills</span>
+      <div class="divider divider-info"></div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="collapse collapse-arrow bg-base-300 my-3">
+          <input type="radio" checked />
+          <div class="collapse-title text-xl font-medium">Languages</div>
+          <div class="collapse-content bg-base-300">
+            <ul class="list-disc m-5">
+              <li>C</li>
+              <li>C#</li>
+              <li>Rust</li>
+              <li>Java</li>
+              <li>Typescript/Javascript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-300 my-3">
+          <input type="radio" checked/>
+          <div class="collapse-title text-xl font-medium">Databases</div>
+          <div class="collapse-content bg-base-300">
+            <ul class="list-disc m-5">
+              <li>MySQL</li>
+              <li>MSSQL</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-300 my-3">
+          <input type="radio" checked/>
+          <div class="collapse-title text-xl font-medium">Cloud</div>
+          <div class="collapse-content bg-base-300">
+            <ul class="list-disc m-5">
+              <li>Azure</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-300 my-3">
+          <input type="radio"  checked />
+          <div class="collapse-title text-xl font-medium">
+            Other Technologies
+          </div>
+          <div class="collapse-content bg-base-300">
+            <ul class="list-disc m-5">
+              <li>Linux</li>
+              <!-- I use Arch btw ;)  -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col bg-base-200 rounded-lg p-5">
+      <span class="text-3xl font-bold text-center">Education</span>
+      <div class="divider divider-info"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <Card
+          title="University of Rajasthan"
+          secondaryTitle="BCA (1/10/2021 - Present)"
+          descriptions={[
+            "Acquired proficiency in general-purpose programming languages such as C and C++, as well as web development languages including HTML, CSS, and JavaScript. Developed a project using C# to further enhance programming skills. Gained a comprehensive understanding of computer fundamentals and the inner workings at a low level.",
+          ]}
+        />
+      </div>
+    </div>
+    <div class="flex flex-col bg-base-200 rounded-lg p-5">
+      <span class="text-3xl font-bold text-center">Work Experience</span>
+      <div class="divider divider-info"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <Card
+          title="SIA Baltijas Pakalpojumi / FalixNodes Limited"
+          secondaryTitle="Staff, SPA, Support Agent (1/10/2021 - Present)"
+          descriptions={[
+            "Provided personalized support to users experiencing account-related issues by leveraging Staff Panel Access, ensuring prompt resolution and enhancing overall user experience.",
+            "Provided prompt and effective support to users experiencing game server-related questions and issues, ensuring a seamless gaming experience and high customer satisfaction levels.",
+            "Provided comprehensive Linux support to FalixNodes's Cloud & Dedicated server customers, resolving technical issues and ensuring seamless operation of their hosting environments.",
+          ]}
+        />
+      </div>
+    </div>
+  </div>
+</Layout>

@@ -20,9 +20,9 @@ import Layout from "../layouts/Layout.astro";
       <h2 class="card-title">Looking for something specific?</h2>
       <ul class="list-disc ml-5">
         <li>
-          View my resume by clicking <button
+          View my resume by clicking <a
             class="link link-primary"
-            onclick="resume.showModal()">here</button
+            href="/resume">here</a
           >.
         </li>
         <li>
@@ -42,14 +42,4 @@ import Layout from "../layouts/Layout.astro";
       </ul>
     </div>
   </div>
-  <dialog id="resume" class="modal">
-    <div class="modal-box">
-      <img class="w-full h-full" src="files/resume.png" alt="Resume"/>
-      <div class="modal-action">
-        <form method="dialog">
-          <button class="btn">Close</button>
-        </form>
-      </div>
-    </div>
-  </dialog>
 </Layout>

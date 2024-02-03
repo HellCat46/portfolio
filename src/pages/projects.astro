@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Project from "../components/Project.astro";
-import { TAGS, STATUS, type Status, type Tags } from "../shared.types";
+import { TAGS, STATUS } from "../shared.types";
 ---
 
 <Layout title="Projects | Harshit">
@@ -20,7 +20,7 @@ import { TAGS, STATUS, type Status, type Tags } from "../shared.types";
     started_at="Nov 1, 2023"
     completed_at="Nov 14, 2023"
     status={STATUS.Complete}
-    tags={[TAGS.Typescript, TAGS.Nodejs, TAGS.Postgres]}
+    tags={[TAGS.Postgres, TAGS.Typescript, TAGS.Nodejs]}
   />
   <Project 
     name="Pater"

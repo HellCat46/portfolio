@@ -1,0 +1,16 @@
+---
+interface Props {
+  title : string,
+  secondaryTitle : string
+  descriptions : string[]
+}
+
+const { title, secondaryTitle, descriptions} = Astro.props;
+---
+
+
+<div class="flex flex-col gap-2  p-4 bg-base-300 rounded-2xl">
+    <span class="text-3xl font-bold text-center">{title}</span>
+    <span class="text-xl text-center text-[#a6adc8]">{secondaryTitle}</span>
+    {descriptions.map((des : string) => <p class="text-nowrap">{des}</p><br> )}
+</div>
