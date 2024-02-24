@@ -3,7 +3,10 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/ResumeCard.astro";
 ---
 
-<Layout title="Resume | Harshit">
+<Layout title="Resume | Harshit" description="Harshit's Resume">
+  <div class="flex items-center justify-center py-5">
+    <a href="/resume.pdf" download class="btn btn-info">Download Resume</a>
+  </div>
   <div
     class="flex flex-col p-5 m-5 lg:m-10 gap-10 border-2 border-error shadow-lg rounded-lg"
   >
@@ -78,7 +81,7 @@ import Card from "../components/ResumeCard.astro";
     <div class="flex flex-col bg-base-200 rounded-lg p-5">
       <span class="text-3xl font-bold text-center">Education</span>
       <div class="divider divider-info"></div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         <Card
           title="University of Rajasthan"
           secondaryTitle="BCA (1/10/2021 - Present)"
@@ -91,7 +94,7 @@ import Card from "../components/ResumeCard.astro";
     <div class="flex flex-col bg-base-200 rounded-lg p-5">
       <span class="text-3xl font-bold text-center">Work Experience</span>
       <div class="divider divider-info"></div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         <Card
           title="SIA Baltijas Pakalpojumi / FalixNodes Limited"
           secondaryTitle="Staff, SPA, Support Agent (1/10/2021 - Present)"
