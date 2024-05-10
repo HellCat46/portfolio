@@ -12,6 +12,7 @@ export const TAGS = {
   Postgres: { name: "PostgreSQL", color: "#2f6792" },
   Azure: { name: "Azure", color: "#06529a" },
   Docker: { name: "Docker", color: "#0092e6" },
+  GraphQL: { name: "GraphQL", color: "#e535ab" },
 } as const;
 export type Tags = (typeof TAGS)[keyof typeof TAGS];
 
