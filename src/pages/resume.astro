@@ -4,107 +4,134 @@ import Card from "../components/ResumeCard.astro";
 ---
 
 <Layout title="Resume | Harshit" description="Harshit's Resume">
-  <div class="flex items-center justify-center py-5">
-    <a href="/resume.pdf" download class="btn btn-info">Download Resume</a>
-  </div>
-  <div
-    class="flex flex-col p-5 m-5 lg:m-10 gap-10 border-2 border-error shadow-lg rounded-lg"
-  >
-    <div class="flex lg:flex-row m-5">
-      <div class="flex flex-col">
-        <div class="text-4xl font-bold">Harshit</div>
-        <div class="text-4xl font-bold">Mittal</div>
-        <div>Rajasthan, India</div>
-      </div>
-      <div class="grow"></div>
-      <div class="flex flex-col justify-end items-center">
-        <a
-          class="text-2xl link link-accent"
-          href="mailto:mittalharshit094@gmail.com">Mail</a
-        >
-        <div class="grow"></div>
-        <a class="text-2xl link link-info" href="mailto:">Github</a>
-      </div>
+    <div class="flex items-center justify-center py-5">
+        <a href="/resume.pdf" download class="btn btn-info">Download Resume</a>
     </div>
-    <div class="flex flex-col bg-base-200 rounded-lg p-5">
-      <span class="text-3xl font-bold text-center">Skills</span>
-      <div class="divider divider-info"></div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div class="collapse collapse-arrow bg-base-300 my-3">
-          <input type="radio" checked />
-          <div class="collapse-title text-xl font-medium">Languages</div>
-          <div class="collapse-content bg-base-300">
-            <ul class="list-disc m-5">
-              <li>C</li>
-              <li>C#</li>
-              <li>Rust</li>
-              <li>Java</li>
-              <li>Typescript/Javascript</li>
-            </ul>
-          </div>
+    <div
+        class="flex flex-col p-5 m-5 lg:m-10 gap-10 border-2 border-error shadow-lg rounded-lg"
+    >
+        <div class="flex lg:flex-row m-5">
+            <div class="flex flex-col">
+                <div class="text-4xl font-bold">Harshit</div>
+                <div class="text-4xl font-bold">Mittal</div>
+                <div>Rajasthan, India</div>
+            </div>
+            <div class="grow"></div>
+            <div class="flex flex-col justify-end items-center">
+                <a
+                    class="text-2xl link link-accent"
+                    href="mailto:mittalharshit094@gmail.com">Mail</a
+                >
+                <div class="grow"></div>
+                <a class="text-2xl link link-info" href="mailto:">Github</a>
+            </div>
         </div>
-        <div class="collapse collapse-arrow bg-base-300 my-3">
-          <input type="radio" checked/>
-          <div class="collapse-title text-xl font-medium">Databases</div>
-          <div class="collapse-content bg-base-300">
-            <ul class="list-disc m-5">
-              <li>MySQL</li>
-              <li>MSSQL</li>
-              <li>PostgreSQL</li>
-            </ul>
-          </div>
+        <div class="flex flex-col bg-base-200 rounded-lg p-5">
+            <span class="text-3xl font-bold text-center">Skills</span>
+            <div class="divider divider-info"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="collapse collapse-arrow bg-base-300 my-3">
+                    <input type="radio" checked />
+                    <div class="collapse-title text-xl font-medium">
+                        Languages
+                    </div>
+                    <div class="collapse-content bg-base-300">
+                        <ul class="list-disc m-5">
+                            <li>C++</li>
+                            <li>Go</li>
+                            <li>Python</li>
+                            <li>Java</li>
+                            <li>Typescript/Javascript</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-300 my-3">
+                    <input type="radio" checked />
+                    <div class="collapse-title text-xl font-medium">
+                        Databases
+                    </div>
+                    <div class="collapse-content bg-base-300">
+                        <ul class="list-disc m-5">
+                            <li>MySQL</li>
+                            <li>MariaDb</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-300 my-3">
+                    <input type="radio" checked />
+                    <div class="collapse-title text-xl font-medium">Cloud & Infrastructure</div>
+                    <div class="collapse-content bg-base-300">
+                        <ul class="list-disc m-5">
+                            <li>Azure</li>
+                            <li>Docker</li>
+                            <li>Nix</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-300 my-3">
+                    <input type="radio" checked />
+                    <div class="collapse-title text-xl font-medium">
+                        Other Technologies
+                    </div>
+                    <div class="collapse-content bg-base-300">
+                        <ul class="list-disc m-5">
+                            <li>Linux</li>
+                            <!-- I use Arch btw ;)  -->
+                            <!-- Not Anymore :( -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="collapse collapse-arrow bg-base-300 my-3">
-          <input type="radio" checked/>
-          <div class="collapse-title text-xl font-medium">Cloud</div>
-          <div class="collapse-content bg-base-300">
-            <ul class="list-disc m-5">
-              <li>Azure</li>
-              <li>Docker</li>
-            </ul>
-          </div>
+        <div class="flex flex-col bg-base-200 rounded-lg p-5">
+            <span class="text-3xl font-bold text-center">Education</span>
+            <div class="divider divider-info"></div>
+            <div
+                class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
+            >
+                <Card
+                    title="Manipal University Jaipur"
+                    addInfo="MCA (July 2024 - June 2026)"
+                    descriptions={[
+                        "Currently pursuing Master of Computer Applications (MCA) at Manipal University, with a focus on backend development and cloud technologies.",
+                    ]}
+                />
+                <Card
+                    title="University of Rajasthan"
+                    addInfo="BCA (July 2021 - June 2024)"
+                    descriptions={[
+                        "Acquired proficiency in general-purpose programming languages such as C and C++, as well as web development languages including HTML, CSS, and JavaScript. Developed a project using C# to further enhance programming skills. Gained a comprehensive understanding of computer fundamentals and the inner workings at a low level.",
+                    ]}
+                />
+            </div>
         </div>
-        <div class="collapse collapse-arrow bg-base-300 my-3">
-          <input type="radio"  checked />
-          <div class="collapse-title text-xl font-medium">
-            Other Technologies
-          </div>
-          <div class="collapse-content bg-base-300">
-            <ul class="list-disc m-5">
-              <li>Linux</li>
-              <!-- I use Arch btw ;)  -->
-            </ul>
-          </div>
+
+        <div class="flex flex-col bg-base-200 rounded-lg p-5">
+            <span class="text-3xl font-bold text-center">Achievements</span>
+            <div class="divider divider-info"></div>
+            <div
+                class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
+            >
+                <Card
+                    title="24 Hours Hackathon - Sphinx 2024"
+                    secondaryTitle="MNIT Jaipur"
+                    addInfo="Secured Third Place (Nov. 2024)"
+                    descriptions={[
+                        "Participated in a 24-hour hackathon at MNIT Jaipur, where I collaborated with a team to develop a blood donation solution that secured third place. This experience enhanced my skills in teamwork, problem-solving, and rapid application development under time constraints.",
+                        "In this Hackathon, we build a Blood Donation solutions to make the donation process more attractive and convenient for the Donators which can encourage more people to donate blood. We used reactjs for Frontend and Golang for Backend. I was responsible for working on the Backend where worked on implementing a basic authentication system using JWT and a reward system for the Donators.",
+                    ]}
+                />
+                <Card
+                    title="MUJ Hack 9.0"
+                    secondaryTitle="Manipal University Jaipur"
+                    addInfo="Secured Third Place (Oct. 2024)"
+                    descriptions={[
+                        "Participated in MUJ Hack 9.0, a 3 day hackathon organized by Manipal University Jaipur, where I collaborated with a team to develop a web application with AI integration that secured third place. This experience enhanced skills such as working with AI model, Prompt Engineering and developing backend applications in Go with Gin Framework.",
+                        "In this Hackathon, We built a web application to help students in focus on their studies without switching between multiple apps. We self hosted Meta's Llama 3 8B model to build a chatbot interface for the students where they could ask their queries regrading a specific topic. We also used the same AI model to generate MCQ questions regarding the topic that student is learning about previously. I was responsible for Backend where i worked on the interface between AI Model and the Webapp. I also did prompt engineering for generating test with proper format so the answer can be evaluated by system automatically."
+                    ]}
+                />
+            </div>
         </div>
-      </div>
     </div>
-    <div class="flex flex-col bg-base-200 rounded-lg p-5">
-      <span class="text-3xl font-bold text-center">Education</span>
-      <div class="divider divider-info"></div>
-      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-        <Card
-          title="University of Rajasthan"
-          secondaryTitle="BCA (1/10/2021 - Present)"
-          descriptions={[
-            "Acquired proficiency in general-purpose programming languages such as C and C++, as well as web development languages including HTML, CSS, and JavaScript. Developed a project using C# to further enhance programming skills. Gained a comprehensive understanding of computer fundamentals and the inner workings at a low level.",
-          ]}
-        />
-      </div>
-    </div>
-    <div class="flex flex-col bg-base-200 rounded-lg p-5">
-      <span class="text-3xl font-bold text-center">Work Experience</span>
-      <div class="divider divider-info"></div>
-      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-        <Card
-          title="SIA Baltijas Pakalpojumi / FalixNodes Limited"
-          secondaryTitle="Staff, SPA, Support Agent (1/10/2021 - Present)"
-          descriptions={[
-            "Provided personalized support to users experiencing account-related issues by leveraging Staff Panel Access, ensuring prompt resolution and enhancing overall user experience.",
-            "Provided prompt and effective support to users experiencing game server-related questions and issues, ensuring a seamless gaming experience and high customer satisfaction levels.",
-            "Provided comprehensive Linux support to FalixNodes's Cloud & Dedicated server customers, resolving technical issues and ensuring seamless operation of their hosting environments.",
-          ]}
-        />
-      </div>
-    </div>
-  </div>
 </Layout>

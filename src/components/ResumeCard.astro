@@ -1,16 +1,25 @@
 ---
 interface Props {
   title : string,
-  secondaryTitle : string
+  secondaryTitle ?: string 
+  addInfo : string,
   descriptions : string[]
+  externalURLs ?: ExternalURLs[]
 }
 
-const { title, secondaryTitle, descriptions} = Astro.props;
+interface ExternalURLs {
+  name : string,
+  icon : string,
+  url : string
+} 
+
+const { title, secondaryTitle, addInfo, descriptions} = Astro.props;
 ---
 
 
 <div class="flex flex-col gap-2  p-4 bg-base-300 rounded-2xl">
     <span class="text-3xl font-bold text-center">{title}</span>
-    <span class="text-xl text-center text-[#a6adc8]">{secondaryTitle}</span>
+    {secondaryTitle && <span class="text-2xl text-center">{secondaryTitle}</span>}
+    <span class="text-xl text-center text-[#a6adc8]">{addInfo}</span>
     {descriptions.map((des : string) => <p class="text-nowrap">{des}</p><br> )}
 </div>
