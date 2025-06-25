@@ -1,10 +1,10 @@
 {
   "name": "portfolio",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+    "start": "yarn build && node run-server.mjs",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"

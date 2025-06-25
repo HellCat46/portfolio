@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hellcat46.works/sitemap-index.xml
+Sitemap: https://harshit.social/sitemap-index.xml
