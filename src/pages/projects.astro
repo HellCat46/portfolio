@@ -5,58 +5,95 @@ import { TAGS, STATUS } from "../shared.types";
 ---
 
 <Layout title="Projects | Harshit" description="List of Harshit's Projects">
-  <Project
-    name="Enkidu"
-    repolink="https://github.com/HellCat46/Enkidu"
-    description="CLI tool to insert data into a database from a CSV file"
-    started_at="Jan 4, 2024"
-    status={STATUS.Working}
-    tags={[TAGS.Java]}
-  />
-  <Project
-    name="Frieren"
-    repolink="https://github.com/HellCat46/Frieren"
-    description="Frieren is a Discord Bot to manage study notes with some extra features."
-    started_at="Nov 1, 2023"
-    completed_at="Nov 14, 2023"
-    status={STATUS.Complete}
-    tags={[TAGS.Postgres, TAGS.Typescript, TAGS.Nodejs]}
-  />
-  <Project
-    name="Pater"
-    repolink="https://github.com/Seikakuna/Pater"
-    description="Just Another Link Shortener"
-    started_at="Dec 1, 2023"
-    completed_at="Mar 17, 2024"
-    status={STATUS.Complete}
-    tags={[TAGS.CSharp, TAGS.MsSQL]}
-  />
-  <Project
-    name="Portfolio"
-    repolink="https://github.com/HellCat46/portfolio"
-    description="The Website you are looking at right now."
-    started_at="Nov 15,2023"
-    completed_at="Dec 6,2023"
-    status={STATUS.Complete}
-    tags={[TAGS.Typescript, TAGS.Nodejs]}
-    livelink="/"
-  />
-  <Project
-    name="Vivy"
-    repolink="https://github.com/HellCat46/Vivy"
-    description="A Discord Bot to iteract with Anilist API"
-    started_at="Apr 19,2024"
-    status={STATUS.Working}
-    tags={[TAGS.Typescript, TAGS.Nodejs, TAGS.Postgres, TAGS.GraphQL]}
-  />
-  <Project
-    name="BookWatt"
-    repolink="https://github.com/HellCat46/BookWatt"
-    description="The Website you are looking at right now."
-    started_at="Dec 15,2023"
-    completed_at="Jan 2,2024"
-    status={STATUS.Archive}
-    tags={[TAGS.Typescript, TAGS.Nodejs, TAGS.CSharp]}
-    livelink="/"
-  />
+    <Project
+        name="Hyprsic"
+        repolink="https://github.com/HellCat46/hyprsic"
+        description="A WIP (Work In Progress) Status Bar for Wayland Compositor Hyprland written from scratch in C++ that aims to provide a highly efficient and simple experience (similiar to i3bar) status bar experience with no or minimal dependencies. "
+        started_at="Jan 4, 2025"
+        status={STATUS.Working}
+        tags={[TAGS.CPP, TAGS.Wayland, TAGS.Hyprland]}
+    />
+    
+    <Project
+        name="JobSpy"
+        description="A Webapp to list and search for jobs across all the major employment websites. I am responsible for the developing backend and managing scraping scripts of this project, which is built using Golang and Gin with Postgres Database. I have also developed work on the Auto Deployment system using Docker and GitHub Actions to automatically deploy the project on the server whenever a new commit is pushed to the main branch."
+        started_at="Jun 19, 2025"
+        status={STATUS.Working}
+        tags={[TAGS.Golang, TAGS.Postgres, TAGS.Docker]}
+    />
+    
+    <Project
+        name="Steina"
+        repolink="httpsL//github.com/HellCat46/Steina"
+        description="A tool to take regular backups of all the files on a Penpot account."
+        started_at="Jul 3, 2024"
+        completed_at="Jul 5, 2024"
+        status={STATUS.Complete}
+        tags={[TAGS.Golang]}
+    />
+
+    <Project
+        name="Villhaze"
+        repolink="https://github.com/HellCat46/villhaze"
+        description="A Multithreaded Websocket server built from scratch using Linux's Socket Library, OpenSSL's SHA Hashing and my own Base64 encoder."
+        started_at="Jul 25, 2024"
+        completed_at="Aug 8, 2024"
+        status={STATUS.Complete}
+        tags={[TAGS.CPP, TAGS.OpenSSL, TAGS.Socket, TAGS.Base64]}
+    />
+
+    <Project
+        name="Frieren"
+        repolink="https://github.com/HellCat46/Frieren"
+        description="Frieren is a Discord Bot to manage study notes with some extra features."
+        started_at="Nov 1, 2023"
+        completed_at="Nov 14, 2023"
+        status={STATUS.Complete}
+        tags={[TAGS.Postgres, TAGS.Typescript, TAGS.Nodejs]}
+    />
+    <Project
+        name="Pater"
+        repolink="https://github.com/Seikakuna/Pater"
+        description="Just Another Link Shortener"
+        started_at="Dec 1, 2023"
+        completed_at="Mar 17, 2024"
+        status={STATUS.Complete}
+        tags={[TAGS.CSharp, TAGS.MsSQL]}
+    />
+    <Project
+        name="Portfolio"
+        repolink="https://github.com/HellCat46/portfolio"
+        description="The Website you are looking at right now."
+        started_at="Nov 15,2023"
+        completed_at="Dec 6,2023"
+        status={STATUS.Complete}
+        tags={[TAGS.Typescript, TAGS.Nodejs]}
+        livelink="/"
+    />
+    <Project
+        name="Vivy"
+        repolink="https://github.com/HellCat46/Vivy"
+        description="A Discord Bot to iteract with Anilist API"
+        started_at="Apr 19,2024"
+        status={STATUS.Working}
+        tags={[TAGS.Typescript, TAGS.Nodejs, TAGS.Postgres, TAGS.GraphQL]}
+    />
+    <Project
+        name="BookWatt"
+        repolink="https://github.com/HellCat46/BookWatt"
+        description="The Website you are looking at right now."
+        started_at="Dec 15,2023"
+        completed_at="Jan 2,2024"
+        status={STATUS.Archive}
+        tags={[TAGS.Typescript, TAGS.Nodejs, TAGS.CSharp]}
+        livelink="/"
+    />
+    <Project
+        name="Enkidu"
+        repolink="https://github.com/HellCat46/Enkidu"
+        description="CLI tool to insert data into a database from a CSV file"
+        started_at="Jan 4, 2024"
+        status={STATUS.Archive}
+        tags={[TAGS.Java]}
+    />
 </Layout>
